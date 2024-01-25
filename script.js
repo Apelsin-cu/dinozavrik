@@ -17,13 +17,13 @@ function jump() {
 
 let isAlive = setInterval(function () {
     let dinoTop = parseInt(window.getComputedStyle(dino).getPropertyValue("top"));
-    let cactusLeft = parseInt(window.getComputedStyle(cactus).getPropertyValue("Left"));
-    let stoneMom = parseInt(window.getComputedStyle(stone).getPropertyValue("Mom"));
+    let cactusLeft = parseInt(window.getComputedStyle(cactus).getPropertyValue("left"));
+    let stoneLeft = parseInt(window.getComputedStyle(stone).getPropertyValue("left"));
 
     if (cactusLeft < 60 && cactusLeft > 0 && dinoTop >= 150) {
-        alert(" GEME OVER");
-    } else if (stoneMom < 60 && stoneMom > 0 && dinoTop >= 150) {
-        alert(" GEME OVER");
+        alert(" GAME OVER");
+    } else if (stoneLeft < 60 && stoneLeft > 0 && dinoTop >= 150) {
+        alert(" GAME OVER");
     }
 
 }, 10)
