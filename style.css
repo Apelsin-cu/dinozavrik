@@ -1,0 +1,86 @@
+.game {
+    width: 610px;
+    height: 210px;
+    border-bottom: 1px solid #000;
+    margin: auto;
+}
+
+#dino {
+    width: 60px;
+    height: 60px;
+    background-image: url(img/dino.png);
+    background-size: 60px 60px;
+    position: relative;
+    top: 150px;
+}
+
+#cactus {
+    width: 20px;
+    height: 40px;
+    background-image: url(img/cactus.png);
+    background-size: 20px 40px;
+    position: relative;
+    top: 110px;
+    left: 580px;
+    animation: cactusMov 1.1s infinite linear;
+}
+
+#stone{
+    width: 20px;
+    height: 40px;
+    background-image: url(img/stone.png);
+    background-size: 20px 40px;
+    position:relative;
+    transform: rotate(90deg);
+    top: 79px;
+    left: 580px;
+    animation: stoneMom 1.5s infinite linear;
+
+
+}
+
+@keyframes stoneMom {
+    0% {
+        left: 580px;
+    }
+
+    100% {
+        left: -20px;
+    }
+}
+
+@keyframes cactusMov {
+    0% {
+        left: 580px;
+    }
+
+    100% {
+        left: -20px;
+    }
+}
+
+.jump {
+    animation: jump 0.3s linear;
+}
+
+@keyframes jump {
+    0% {
+        top: 150px;
+    }
+
+    30% {
+        top: 130px;
+    }
+
+    50% {
+        top: 80px;
+    }
+
+    80% {
+        top: 130px;
+    }
+
+    100% {
+        top: 150px;
+    }
+}
